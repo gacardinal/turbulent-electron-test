@@ -1,4 +1,4 @@
-## Electron exercise
+# Electron exercise
 
 Application has been scaffolded with [Electron forge](https://www.electronforge.io/), read the documentation for more details about usage and configuration.
 
@@ -20,3 +20,4 @@ And that's it :)
 
 Feel free to add styling to the application, with custom CSS or using a UI Framework.
 You can use any tools you want, as long as the features described above are working.
+

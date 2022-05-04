@@ -26,7 +26,10 @@
  * ```
  */
 
-import './index.css';
+import './style/normalize.css';
+import './style/skeleton.css';
+import './style/index.css';
+
 import './main.jsx';
 
 console.log('👋 This message is being logged by "renderer.js", included via webpack');

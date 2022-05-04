@@ -1,0 +1,38 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  margin: auto;
+  max-width: 38rem;
+  padding: 2rem;
+  color: white;
+  background: #182f35;
+}
+
+body::after {
+  background-image: url("../images/marble-texture-background.png");
+  background-blend-mode: color-burn;
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 15%;
+  z-index: -1;
+
+}
+
+textarea {
+  color: #333;
+  margin: 0px;
+  width: 100%;
+}
+
+.error-message {
+  height: 24px;
+  color: red;
+  font-weight: bold;
+}
+
+#notes {
+  overflow-y: auto;
+}

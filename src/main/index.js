@@ -33,6 +33,7 @@ app.on('ready', () => {
   createWindow();
 
   const fsRepo = new FileSystemNoteRepository();
+  // Here we have the opportunity
   const notesController = new NotesController(fsRepo);
   ipcMain.handle(IpcEvents.CreateNote, notesController.handleSaveNote);
 });
