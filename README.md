@@ -27,7 +27,7 @@ You can use any tools you want, as long as the features described above are work
 Hi! I had some fun playing with this project!
 I hope you like it!
 
-Since the electron's main process is supposed (in my opinion at least) to act as an API that the front end can consume, I like to stick to something that's akin to Larman's controller principle. I opt to structure my main process in much the same way I would if I was writing an HTTP API, meaning that the main process creates controller instances who's responsibilities are to manage access and operations on the domain entities.
+Since the electron main process is supposed (in my humble opinion, at least) to act as an API that the front end can consume, I like to stick to something that's akin to Larman's controller principle. I opt to structure my main process in much the same way I would if I was writing an HTTP API, meaning that the main process creates controller instances who's responsibilities are to manage access and operations on the domain entities.
 
 The controllers themselves depend on abstractions of a repository that acts as the persistence layer; in this case, there is a `AbstractNoteRepository` class that's "abstract" that specifies the interface to implement and a `FileSystemNoteRepository` class that is a concretion of that interface.
 
