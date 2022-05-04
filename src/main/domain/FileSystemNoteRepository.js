@@ -4,7 +4,6 @@ import { promisify } from 'util';
 import * as fs from 'fs';
 import Note from "./entities/note";
 const writeFile = promisify(fs.writeFile);
-const readFile = promisify(fs.readFile);
 
 /**
  * Concretion of the `AbstractNoteRepository` that stores Note entities
@@ -23,26 +22,6 @@ class FileSystemNoteRepository extends AbstractNoteRepository {
     const newNote = new Note(content, path);
     await writeFile(path, content);
     return newNote;
-  }
-
-  /**
-   * Gets a Note with the specified URI, if it exists
-   * @abstract
-   * @param {string?} path The path of the Note to get
-   * @returns {Promise<Note || null>} A promise that resolves with the created Note
-   */
-   getNoteAtURI(path) {
-    throw new Error("Not implemented");
-  }
-
-  /**
-   * Deletes a Note at the specified URI
-   * @abstract
-   * @param {string?} uri The URI of the Note to delete
-   * @returns {Promise<void>} when the operation settles
-   */
-  deleteNoteAtURI(uri) {
-    throw new Error("Not implemented");
   }
 
 }

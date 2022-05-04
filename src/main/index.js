@@ -33,7 +33,8 @@ app.on('ready', () => {
   createWindow();
 
   const fsRepo = new FileSystemNoteRepository();
-  // Here we have the opportunity
+  // Here we have the opportunity to inject a different concretion
+  // of the repository interface in the controller instance, if we so wish
   const notesController = new NotesController(fsRepo);
   ipcMain.handle(IpcEvents.CreateNote, notesController.handleSaveNote);
 });

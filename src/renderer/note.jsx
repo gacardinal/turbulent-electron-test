@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import "./style/notecard.css";
 
 function NoteCard(props) {
-  console.log(props)
   return (
     <div className="note">
       <p className="note-content">{ props.content }</p>

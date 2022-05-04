@@ -19,7 +19,6 @@ export class NotesController {
    * @param {string} content The content to write to the Note
    */
   handleSaveNote = async (e, content) => {
-    console.log(content);
     const result = await dialog.showSaveDialog({
       title: "Save Note",
       defaultPath: path.join(homedir(), `MyNote ${getCurrentDate()}.note`),
@@ -32,7 +31,6 @@ export class NotesController {
     }
   }
 }
-
 
 /**
  * Padds a date component with a leading zero to make it 2 digits long

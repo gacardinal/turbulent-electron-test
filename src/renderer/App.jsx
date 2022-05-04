@@ -6,7 +6,6 @@ const App = () => {
 
   const [ notes, setNotes ] = useState([]);
 
-
   const handleSubmit = async values => {
     const savedNote = await window.appContext.saveNote(values.content);
     if (savedNote) {
