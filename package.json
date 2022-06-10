@@ -14,7 +14,8 @@
   "keywords": [],
   "author": {
     "name": "Turbulent",
-    "email": "info@turbulent.ca"
+    "email": "info@turbulent.ca",
+    "test": "test"
   },
   "license": "MIT",
   "config": {
